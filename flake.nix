@@ -29,6 +29,8 @@
           default = pkgs.mkShell {
             # Project dependencies
             packages = [
+              pkgs.jq
+
               # Infrastructure management
               pkgs.terraform # Infrastructure as Code tool
               pkgs.azure-cli # For communicating with Azure through the terminal
